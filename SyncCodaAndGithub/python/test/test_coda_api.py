@@ -21,7 +21,7 @@ class TestCodaAPIEndToEnd(unittest.TestCase):
 
     def test_list_pages_with_wrong_app_key(self):
         response = coda_api.listPages(coda_api_key="wrong_app_key", doc_id='OBsatQ1Yn9')
-        self.assertIsNone(response)
+        self.assertFalse(True)
 
 if __name__ == '__main__':
     if len(sys.argv) <= 1:
