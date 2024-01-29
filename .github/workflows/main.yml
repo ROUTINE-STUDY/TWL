@@ -48,7 +48,7 @@ jobs:
           git push
 
   end-to-end-test:
-    if: github.event_name == 'pull_request' && github.event.action == 'opened' && github.event.pull_request.base.ref == 'main'
+    if: github.event_name == 'pull_request' && github.event.action == 'opened' && github.event.pull_request.base.ref == 'develope'
     runs-on: ubuntu-latest
     env:
       PYTHONPATH: /home/runner/work/TWL/TWL/SyncCodaAndGithub/python
